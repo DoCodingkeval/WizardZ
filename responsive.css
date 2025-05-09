@@ -158,7 +158,7 @@
     }
 
     .company__images{
-        top: 103%;
+        top: 120%;
         flex-wrap: wrap;
         gap: 10vw;
         justify-content: center;
