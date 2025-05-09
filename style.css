@@ -127,6 +127,11 @@ body{
     color: #000;
 }
 
+.hero__rightsection{
+    user-select: none;
+    pointer-events: none;
+}
+
 .company__images{
     height: fit-content;
     display: flex;
@@ -138,6 +143,8 @@ body{
 }
 .brand__images{
     height: 2.5vw;
+    user-select: none;
+    pointer-events: none;
 }
 /* ------------SERVICES--------------------- */
 .services__section{
@@ -176,6 +183,8 @@ body{
     box-shadow: 0 10px 0 #000;
     padding: 2vw 2.2vw;
     position: relative;
+    user-select: none;
+    pointer-events: none;
 }
 .first__heading,
 .second__heading{
@@ -232,6 +241,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
+    pointer-events: none;
 }
 
 .content__heading{
