@@ -83,13 +83,7 @@ function PageSecondAnime(){
         ease: "power2.out"
     },"same")
 }
+if(window.innerWidth > 768){
 PageOneAnime()
 PageSecondAnime()
-
-// --------------MENU-------------------
-let menu = document.querySelector(".header__menu")
-let nav = document.querySelector(".navbar")
-
-menu.addEventListener("click",function(){
-    nav.classList.toggle("active")
-})
+}
