@@ -24,9 +24,10 @@ html {
   align-items: center;
 }
 .header__logo {
-  font-size: clamp(1rem, 1vw + 0.1rem, 1.5rem);
+  font-size: clamp(0.9rem, 1vw + 0.15rem, 1.5rem);
 }
 .header__icon {
+  font-size: clamp(1.8rem, 2vw + 0.3rem, 3rem);
   margin-right: 10px;
   transform: rotate(45deg);
   display: inline-block;
@@ -100,7 +101,7 @@ input[type="checkbox"] {
   align-items: center;
 }
 .hero__leftsection {
-  margin-top: 20px;
+  width: fit-content;
 }
 
 .left__heading {
@@ -109,7 +110,7 @@ input[type="checkbox"] {
   width: 70%;
 }
 .left__paragraph {
-  width: 70%;
+  width: 75%;
   margin-top: 20px;
   font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
   font-weight: 500;
@@ -150,18 +151,24 @@ input[type="checkbox"] {
 }
 
 .hero__rightsection {
+  width: 100%;
   user-select: none;
   pointer-events: none;
 }
+.right__image{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .company__images {
-  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 7rem;
   position: absolute;
-  bottom: -15%;
+  bottom: -20%;
+
 }
 .brand__images {
   height: 40px;
@@ -170,6 +177,7 @@ input[type="checkbox"] {
 }
 /* ------------SERVICES--------------------- */
 .services__section {
+  width: 100%;
   margin-top: 125px;
   padding: 0 10px;
 }
@@ -282,7 +290,7 @@ input[type="checkbox"] {
 .footer {
   width: 100%;
   padding: min(3rem, 8%);
-  margin: 100px 0;
+  margin: 20px 0;
 }
 
 .study__heading {
