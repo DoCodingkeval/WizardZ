@@ -115,7 +115,7 @@
     }
 
     .company__images{
-        bottom: -25%;
+        bottom: -20%;
         flex-wrap: wrap;
         gap: 40px;
         justify-content: center;
