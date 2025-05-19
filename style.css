@@ -8,6 +8,7 @@
 body,
 html {
   font-family: "Space Grotesk";
+  font-size: 100%;
 }
 :root {
     --white: #FFFFFF;
@@ -24,10 +25,9 @@ html {
   align-items: center;
 }
 .header__logo {
-  font-size: clamp(0.9rem, 1vw + 0.15rem, 1.5rem);
+  font-size: 1.1rem;
 }
 .header__icon {
-  font-size: clamp(1.8rem, 2vw + 0.3rem, 3rem);
   margin-right: 10px;
   transform: rotate(45deg);
   display: inline-block;
@@ -44,18 +44,18 @@ html {
   gap: 70px;
 }
 .nav__link {
-  font-size: clamp(1rem, 1vw + 0.1rem, 1.5rem);
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--black);
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav__link:hover {
   text-decoration: underline;
 }
 .header__menu {
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  font-size: 2rem;
   font-weight: 600;
   display: none;
 }
@@ -73,7 +73,7 @@ input[type="checkbox"] {
   border-radius: 10px;
   background: transparent;
   font-weight: 600;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .btn--white:hover {
   background-color: var(--black);
@@ -84,7 +84,7 @@ input[type="checkbox"] {
   right: 20px;
   top: 20px;
   font-weight: bold;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  font-size: 2rem;
   display: none;
 }
 /* ------------HERO--------------------- */
@@ -112,7 +112,7 @@ input[type="checkbox"] {
 .left__paragraph {
   width: 75%;
   margin-top: 20px;
-  font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -121,7 +121,7 @@ input[type="checkbox"] {
   border: 2px solid;
   background-color: var(--black);
   color: var(--white);
-  font-size: clamp(1rem, 1vw + 0.1rem, 1.5rem);
+  font-size: 1.1rem;
   border-radius: 14px;
   cursor: pointer;
   margin-top: 45px;
@@ -139,7 +139,7 @@ input[type="checkbox"] {
   height: 100%;
   border-radius: 10px;
   background-color: var(--white);
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .btn--secondary:hover::after {
   left: 0;
@@ -163,8 +163,8 @@ input[type="checkbox"] {
 
 .company__images {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   gap: 7rem;
   position: absolute;
   bottom: -20%;
@@ -190,7 +190,7 @@ input[type="checkbox"] {
   border-radius: 5px;
 }
 .services__paragraph {
-  font-size: clamp(1rem, 1vw + 0.35rem, 1.5rem);
+  font-size: 1.3rem;
   width: 50%;
   font-weight: 500;
   margin-top: 25px;
@@ -244,7 +244,7 @@ input[type="checkbox"] {
   margin-right: 15px;
   display: inline-block;
   transform: rotate(20deg);
-  font-size: clamp(1rem, 1vw + 0.3rem, 1.5rem);
+  font-size: 1.3rem;
 }
 .each__card:nth-child(2) i,
 .each__card:nth-child(3) i {
@@ -275,7 +275,7 @@ input[type="checkbox"] {
 }
 
 .content__paragraph {
-  font-size: clamp(1rem, 1vw + 0.2rem, 1.5rem);
+  font-size: 1.2rem;
   line-height: 1.8;
   margin-top: 15px;
   width: 70%;
@@ -301,7 +301,7 @@ input[type="checkbox"] {
   font-size: clamp(2rem, 1vw + 1.3rem, 2.5rem);
 }
 .study__paragraph {
-  font-size: clamp(1rem, 1vw + 0.35rem, 1.5rem);
+  font-size: 1.3rem;
   width: 50%;
   margin-top: 25px;
   font-weight: 500;
@@ -323,22 +323,22 @@ input[type="checkbox"] {
 .card__paragraph {
   color: var(--white);
   width: 92%;
-  font-size: clamp(1rem, 1vw + 0.2rem, 2rem);
-  margin-bottom: 3vw;
+  font-size: 1.2rem;
+  margin-bottom: 60px;
 }
 .learn__card:nth-child(3) {
   box-shadow: none;
 }
 .card__link {
   color: var(--green);
-  font-size: clamp(1rem, 1vw + 0.2rem, 2rem);
+  font-size: 1.2rem;
   text-decoration: none;
 }
 .card__link:hover {
   text-decoration: underline;
 }
 .arrow__icon {
-  font-size: clamp(1.5rem, 1vw + 0.4rem, 2.5rem);
+  font-size: 1.4rem;
   display: inline-block;
   transform: rotate(10deg);
 }
