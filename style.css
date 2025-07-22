@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --green: #b9ff66;
+  --body-font: "Space Grotesk", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +14,10 @@
 }
 body,
 html {
-  font-family: "Space Grotesk";
+  font-family: var(--body-font);
   font-size: 100%;
 }
-:root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --green: #b9ff66;
-}
+
 /* ------------HEADER--------------------- */
 .header {
   height: 70px;
@@ -36,6 +39,9 @@ html {
 .navbar {
   position: relative;
 }
+.navbar.active {
+  transform: translateX(0);
+}
 .nav__items {
   list-style: none;
   display: flex;
@@ -44,11 +50,11 @@ html {
   gap: 70px;
 }
 .nav__link {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--black);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav__link:hover {
@@ -73,13 +79,13 @@ input[type="checkbox"] {
   border-radius: 10px;
   background: transparent;
   font-weight: 600;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .btn--white:hover {
   background-color: var(--black);
   color: var(--white);
 }
-.close__btn {
+.close__menu {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -90,41 +96,44 @@ input[type="checkbox"] {
 /* ------------HERO--------------------- */
 .main {
   width: 100%;
-  padding: min(2.5rem, 5%);
+  padding: 1rem 2rem;
 }
 
 .hero__section {
   width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .hero__leftsection {
-  width: fit-content;
+  width: 100%;
 }
 
 .left__heading {
-  font-size: clamp(2rem, 1vw + 1.5rem, 3rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 600;
   width: 70%;
 }
 .left__paragraph {
-  width: 75%;
+  width: 100%;
   margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
 }
 .btn--secondary {
   padding: 17px 32px;
   border: 2px solid;
+  white-space: nowrap;
   background-color: var(--black);
   color: var(--white);
   font-size: 1.1rem;
   border-radius: 14px;
   cursor: pointer;
-  margin-top: 45px;
+  margin-top: 2.5rem;
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
@@ -139,7 +148,7 @@ input[type="checkbox"] {
   height: 100%;
   border-radius: 10px;
   background-color: var(--white);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .btn--secondary:hover::after {
   left: 0;
@@ -152,23 +161,24 @@ input[type="checkbox"] {
 
 .hero__rightsection {
   width: 100%;
+  height: 100%;
   user-select: none;
   pointer-events: none;
 }
-.right__image{
-  max-width: 100%;
+.right__image {
+  width: 90%;
   height: auto;
   display: block;
 }
 
 .company__images {
+  max-height: 20vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 7rem;
   position: absolute;
   bottom: -20%;
-
 }
 .brand__images {
   height: 40px;
@@ -178,8 +188,7 @@ input[type="checkbox"] {
 /* ------------SERVICES--------------------- */
 .services__section {
   width: 100%;
-  margin-top: 125px;
-  padding: 0 10px;
+  padding: 14rem 0;
 }
 .services__heading {
   font-size: clamp(2rem, 1vw + 1.3rem, 2.5rem);
@@ -260,10 +269,8 @@ input[type="checkbox"] {
 }
 .content__section {
   width: 100%;
-  padding: 40px 70px;
   background-color: #f0f0f0;
   border-radius: 25px;
-  margin-top: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,6 +279,11 @@ input[type="checkbox"] {
 .content__heading {
   font-size: clamp(1rem, 1vw + 1.7rem, 3rem);
   font-weight: 600;
+}
+
+.content__leftsection {
+  width: 100%;
+  height: 100%;
 }
 
 .content__paragraph {
@@ -283,7 +295,6 @@ input[type="checkbox"] {
 }
 
 .content__image {
-  max-width: 50%;
   height: auto;
 }
 /* ------------FOOTER--------------------- */
@@ -313,7 +324,7 @@ input[type="checkbox"] {
   width: 100%;
   background-color: var(--black);
   border-radius: 40px;
-  margin-top: 70px;
+  margin-top: 5rem;
 }
 .learn__card {
   box-shadow: 2px 0 0 var(--white);

@@ -1,14 +1,10 @@
-#sidebar-active:checked ~ .navbar {
-  display: block;
-  transform: translateX(0);
-}
-
-@media (max-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1600px) {
   html {
     font-size: 93.75%;
   }
   .header {
     white-space: nowrap;
+    padding: 3rem 5rem;
   }
   .nav__items {
     gap: 3rem;
@@ -17,21 +13,23 @@
     width: 80%;
   }
   .left__paragraph {
-    width: 100%;
+    width: 96%;
   }
-  .company__images {
-    gap: 4rem;
-    bottom: -35%;
+  .main,
+  .footer {
+    padding: 1.5rem 5rem;
   }
-  .brand__images {
-    height: 30px;
-  }
+
   .services__paragraph {
     width: 60%;
   }
+
+  .content__section {
+    padding: 2rem 4rem;
+  }
 }
 
-@media (max-width: 769px) {
+@media screen and (min-width: 100px) and (max-width: 800px) {
   html {
     font-size: 87.5%;
   }
@@ -44,21 +42,18 @@
     transform: translateX(-100%);
     width: 100%;
     z-index: 500;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .nav__items {
     align-items: flex-start;
     gap: 30px;
-    padding: 3rem 2rem;
+    padding: 3rem;
     flex-direction: column;
   }
 
-  .close__btn {
-    display: block;
-  }
-
-  .header__menu {
+  .header__menu,
+  .close__menu {
     display: block;
   }
   label {
@@ -72,27 +67,14 @@
     width: 100%;
   }
 
-  .left__paragraph {
-    width: 100%;
-  }
-
-  .btn--secondary {
-    margin-top: 50px !important;
-  }
-
   .company__images {
-    bottom: -17%;
-    gap: 40px;
+    transform: translateY(-7rem);
   }
 
   .brand__images {
     height: 25px;
   }
 
-  .btn--secondary {
-    padding: 2vh 2.8vw;
-    margin-top: 3vh;
-  }
   .services__paragraph {
     width: 100%;
   }
@@ -103,10 +85,21 @@
     width: 100%;
   }
   .content__section {
-    padding: 30px 45px;
+    padding: 2.5rem 3rem;
+    flex-direction: column;
   }
+  .content__leftsection {
+    order: 1;
+    padding: 1rem 0;
+  }
+
   .content__paragraph {
-    width: 84%;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .learn__section {
+    padding: 2rem;
   }
 
   .learn__card {
@@ -114,102 +107,35 @@
     box-shadow: none;
     padding: 20px 0;
   }
+
+  .card__paragraph {
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
 }
 
-@media (max-width: 426px) {
-  html {
-    font-size: 81.25%;
-  }
-  .close__btn {
-    display: block;
-  }
-
-  .company__images {
-    bottom: -20%;
-    gap: 40px;
-    justify-content: center;
-  }
-
-  .brand__images {
-    height: 25px;
-  }
-
-  .hero__section {
-    margin-top: 20px;
-  }
-
-  .right__image {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .btn--secondary {
-    margin: 3vh 0;
-    padding: 2.5vh 4.5vw;
-    border-radius: 10px;
-  }
-
-  .cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .services__section {
-    padding-top: 2rem;
-  }
-
-  .each__card,
-  .each__card:nth-child(2),
-  .each__card:nth-child(3) {
-    height: 250px;
-    border-radius: 25px;
-  }
-
+@media screen and (min-width: 768px) {
   .card__image {
-    max-width: 50%;
-    right: 0;
-    top: 15%;
+    width: 240px;
+    top: 3.5rem;
   }
-
-  .content__section {
-    flex-direction: column;
-  }
-
-  .content__image {
-    order: -1;
-    top: 0;
-    max-width: 100%;
-  }
-  .content__paragraph {
-    width: 100%;
-  }
-
-  .btn--secondary {
-    margin: 3vh 0;
-    padding: 2vh 4vw;
-  }
-  .footer {
-    padding: 0 20px;
-  }
-  .study__paragraph {
-    width: 100%;
-  }
-  .learn__section {
-    padding: 40px 20px;
+  .learn__card {
+    padding-right: 1rem;
   }
 }
 
-@media (max-width: 376px) {
+@media (min-width: 375px) and (max-width: 426px) {
   html {
     font-size: 75%;
   }
 
   .company__images {
-    bottom: -32%;
+    transform: translateY(2rem);
     justify-content: space-evenly;
   }
 
   .services__section {
-    padding-top: 10vh;
+    padding-top: 23rem;
   }
 
   .content__image {
@@ -217,7 +143,7 @@
   }
 
   .card__image {
-    height: 60%;
-    top: 7vh;
+    max-width: 200px;
+    top: 5rem;
   }
 }
